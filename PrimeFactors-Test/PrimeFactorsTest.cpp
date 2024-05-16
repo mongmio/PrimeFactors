@@ -4,8 +4,13 @@
 #include "vector"
 using namespace std;
 
-TEST(PrimeFactorsTest, OfTest) {
+class PrimeFactorsTest : public testing::Test
+{
+protected:
 	PrimeFactors primeFactor{};
+};
+
+TEST_F(PrimeFactorsTest, OfTest) {
 	vector<int> expected = {};
 	primeFactor.of(1);
 }
