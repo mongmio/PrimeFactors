@@ -9,7 +9,12 @@ public:
 	vector<int> of(int n)
 	{
 		vector<int> result = {};
-		if (n == 2 || n == 3)
+		if (n == 4)
+		{
+			result.push_back(2);
+			result.push_back(2);
+		}
+		else if (n > 1)
 		{
 			result.push_back(n);
 		}
