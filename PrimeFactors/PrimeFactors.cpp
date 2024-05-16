@@ -6,17 +6,20 @@ class PrimeFactors
 public:
 	PrimeFactors();
 	~PrimeFactors();
-	vector<int> of(int n)
+	vector<int> of(int number)
 	{
 		vector<int> result = {};
-		if (n == 4)
+		if (number == 4)
 		{
-			result.push_back(2);
-			result.push_back(2);
+			while (number % 2 == 0)
+			{
+				result.push_back(2);
+				number /= 2;
+			}
 		}
-		else if (n > 1)
+		else if (number > 1)
 		{
-			result.push_back(n);
+			result.push_back(number);
 		}
 		return result;
 	}
