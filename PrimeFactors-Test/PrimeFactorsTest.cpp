@@ -34,3 +34,14 @@ TEST_F(PrimeFactorsTest, Of61Test) {
 	vector<int> expected = { 2, 3 };
 	EXPECT_EQ(expected, primeFactor.of(6));
 }
+
+TEST_F(PrimeFactorsTest, Of91Test) {
+	vector<int> expected = { 3, 3 };
+	EXPECT_EQ(expected, primeFactor.of(9));
+}
+
+
+TEST_F(PrimeFactorsTest, Of121Test) {
+	vector<int> expected = { 2, 2, 3 };
+	EXPECT_EQ(expected, primeFactor.of(12));
+}
