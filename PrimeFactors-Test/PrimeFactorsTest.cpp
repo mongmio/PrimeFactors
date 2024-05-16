@@ -19,3 +19,8 @@ TEST_F(PrimeFactorsTest, Of21Test) {
 	vector<int> expected = {2};
 	primeFactor.of(2);
 }
+
+TEST_F(PrimeFactorsTest, Of31Test) {
+	vector<int> expected = { 3 };
+	primeFactor.of(3);
+}
