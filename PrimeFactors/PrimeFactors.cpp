@@ -8,26 +8,28 @@ public:
 	~PrimeFactors();
 	vector<int> of(int number)
 	{
+		int devisor = 2;
 		vector<int> result = {};
 		if (number == 4)
 		{
-			while (number % 2 == 0)
+			while (number % devisor == 0)
 			{
-				result.push_back(2);
-				number /= 2;
+				result.push_back(devisor);
+				number /= devisor;
 			}
 		}
 		else if (number == 6)
 		{
-			while (number % 2 == 0)
+			while (number % devisor == 0)
 			{
-				result.push_back(2);
-				number /= 2;
+				result.push_back(devisor);
+				number /= devisor;
 			}
-			while (number % 3 == 0)
+			devisor++;
+			while (number % devisor == 0)
 			{
-				result.push_back(3);
-				number /= 3;
+				result.push_back(devisor);
+				number /= devisor;
 			}
 		}
 		else if (number > 1)
