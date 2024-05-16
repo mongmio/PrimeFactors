@@ -17,6 +17,19 @@ public:
 				number /= 2;
 			}
 		}
+		else if (number == 6)
+		{
+			while (number % 2 == 0)
+			{
+				result.push_back(2);
+				number /= 2;
+			}
+			while (number % 3 == 0)
+			{
+				result.push_back(3);
+				number /= 3;
+			}
+		}
 		else if (number > 1)
 		{
 			result.push_back(number);
